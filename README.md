@@ -46,5 +46,5 @@ Este proyecto de código abierto está disponible conforme a los términos de la
 
 &nbsp;
 ¡Las contribuciones son bienvenidas!
-Si encontrás algún error, por más mínimo que sea, no dudes en abrir un [issue](https://github.com/mrmalvicino/dsp-notes/issues/) para hacérmelo saber.
+Si encontrás algún error, por más mínimo que sea, no dudes en abrir un [issue](https://github.com/mrmalvicino/physics-book/issues/) para hacérmelo saber.
 También podés hacer un fork y un pull request para incorporar la corrección por tu cuenta.
