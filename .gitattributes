@@ -1,0 +1,6 @@
+# Linguist (languages percentages)
+
+*.yml linguist-vendored
+*.bib linguist-vendored
+*.svg linguist-vendored
+*.pdf linguist-vendored
