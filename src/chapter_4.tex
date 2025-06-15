@@ -1,0 +1,391 @@
+\chapter{Energía}
+
+La energía es la capacidad de un cuerpo para cambiar de estado físico.
+Ejemplos de estados físicos son la posición, la velocidad, la temperatura, o la carga eléctrica de un sistema, entre otros.
+Cada estado físico tiene asociado un tipo de energía diferente.
+
+La transferencia de energía se llama trabajo y se denota como $W$.
+Tanto la energía como el trabajo van a tener unidad de Joules $[J]$.
+Por convención, si el trabajo es positivo significa que una fuerza externa le está entregando energía al sistema.
+
+En el capítulo \ref{cha:dinamics} se vió que al aplicar una fuerza sobre un cuerpo, este puede cambiar su velocidad y posición.
+En este capítulo se analizará cómo un sistema puede transferirle parte de su energía a otro mediante una fuerza, y qué magnitudes se conservan o no durante el proceso.
+
+
+\section{Tipos de energía mecánica}
+
+Un sistema puede acumular varios tipos de energía.
+En mecánica clásica, se estudian los siguientes tipos de energía mecánica.
+
+La energía cinética es aquella que tiene un cuerpo por estar en movimiento, ya que es proporcional a su velocidad.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Energía cinética}
+    \begin{equation*}
+        \sub{E}{cin} = \frac{m \, v^2}{2}
+    \end{equation*}
+\end{mdframed}
+
+La energía potencial gravitatoria es aquella que tiene un cuerpo por estar a cierta distancia del centro de masa de un sistema.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Energía potencial gravitatoria}
+    \begin{equation*}
+        \sub{E}{gra} = m \, g \, h
+    \end{equation*}
+\end{mdframed}
+
+La energía potencial elástica es aquella que tiene un cuerpo por estar comprimiendo un resorte.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Energía potencial elástica}
+    \begin{equation*}
+        \sub{E}{ela} = \frac{k \, x^2}{2}
+    \end{equation*}
+\end{mdframed}
+
+La energía potencial es toda aquella que surge a partir de un campo de gradiente.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Energía potencial}
+    \begin{equation*}
+        \sub{E}{pot} = \sub{E}{gra} + \sub{E}{ela}
+    \end{equation*}
+\end{mdframed}
+
+La energía mecánica total de un cuerpo es la suma de energía cinética y potencial que el cuerpo tenga.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+        \label{defn:mechanicEnergy}
+    \end{defn}
+    \cusTi{Energía mecánica}
+    \begin{equation*}
+        \sub{E}{mec} = \sub{E}{cin} + \sub{E}{pot}
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Trabajo}
+
+El trabajo que hace una fuerza cuantifica la energía que, el agente que la realiza, le está transfiriendo a un sistema.
+Los procesos que involucran cambios de energía mecánica se suelen caracterizar estudiando el desplazamiento (Def. \ref{defn:desplazamiento}) de un cuerpo o sistema.
+
+Consideremos una trayectoria $\xyz(t)$ junto con un campo de fuerza $\vec{F}$ que afecta a todos los puntos del recorrido, tales como $\xyz_0$ y $\xyz_1$.
+
+\begin{center}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/energia-1.pdf_tex}
+\end{center}
+
+Para el segmento recto comprendido entre los puntos $\xyz_0$ y $\xyz_1$, vemos que la componente tangente ($\sub{F}{tan}$) de la fuerza ($\vec{F}$) y el ángulo ($\theta$) que esta forma con el desplazamiento ($\Delta \xyz$) permanecen constantes.
+
+\begin{center}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/energia-2.pdf_tex}
+\end{center}
+
+Por trigonometría vemos que:
+\begin{equation*}
+    \sub{F}{tan} = \nnorm{\vec{F}} \cos\inParentheses{\theta}
+\end{equation*}
+
+El trabajo se define multiplicando la componente de fuerza que está contibuyendo al sentido de movimiento por la distancia de desplazamiento.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Trabajo}
+    \begin{equation*}
+        W = \sub{F}{tan} \, \nnorm{\Delta \xyz}
+    \end{equation*}
+\end{mdframed}
+
+Pero la situación anterior se puede poner engorrosa fácilmente.
+Ya sea porque la fuerza varía en módulo o dirección para diferentes puntos del espacio, o porque la dirección de la trayectoria varía con el tiempo.
+En cualquiera de estos casos, la definición anterior no valdría, y habría que estudiar el diferencial de trabajo ($\dif W$) de un campo vectorial de fuerza a lo largo de una trayectoria.
+
+En el caso de la trayectoria anterior, se observa que fuera del tramo recto el ángulo $\theta$ varía y, en otra circunstancia, también podría hacerlo el largo de $\vec{F}$.
+
+\begin{center}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/energia-3.pdf_tex}
+\end{center}
+
+Aplicando la propiedad $\vec{u} \cdot \vec{v} = \nnorm{\vec{u}} \, \nnorm{\vec{v}} \cos\inParentheses{\theta}$ para el producto interno y luego integrando, se tiene:
+\begin{align*}
+    \Delta W &= \nnorm{\vec{F}} \, \nnorm{\Delta \vec{r}} \cos\inParentheses{\theta}
+    \\[1ex]
+    &= \vec{F} \cdot \Delta \xyz
+    \\[1ex]
+    W = \int \dif W &= \int_C \vec{F} \cdot \dif \xyz
+\end{align*}
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+        \label{defn:workLineIntegral}
+    \end{defn}
+    \cusTi{Trabajo}
+    \begin{equation*}
+        W = \int_C \Vec{F} \cdot \dif \Vec{s}
+    \end{equation*}
+\end{mdframed}
+
+\begin{itemize}
+    \item
+    Donde $\dif \Vec{s}$ (o $\dif \Vec{r}$ en algunas bibliografías) es el diferencial de desplazamiento, también llamado ``line element'' o simplemente diferencial del vector de posición.
+    Está dado por un segmento de recta infinitesimal de la trayectoria $(C)$ y se define con un versor tangente $(\versor{t})$ a la curva:
+    \[ \dif \Vec{s} = \versor{t} \, \dif s \]
+    
+    \item Donde $\dif s$ es el elemento de arco, que es el largo del diferencial de distancia:
+    \[
+      \dif s = \norm{\dfrac{\dif}{\dif t} \xyz(t)} \dif t  = \norm{\dif \Vec{s} \,}
+    \]
+\end{itemize}
+
+La anterior es una integral que en Cálculo Multivariable se conoce como integral curvilínea de tipo 2.
+Pero este método sería muy engorroso ya que requeriría conocer la expresión vectorial de los factores, para después calcular su producto interno.
+
+No obstante, podemos valernos de que las fuerzas perpendiculares a la trayectoria no hacen trabajo.
+Si se logra descomponer al campo de fuerzas en una componente tangencial y otra normal, sólo hace falta computar la integral para la componente tangencial para calcular el trabajo.
+\begin{align*}
+    W &= \int_C \Vec{F} \cdot \dif \Vec{s}
+    \\
+    &= \int_C \Vec{F} \cdot \versor{t} \, \dif s
+    \\
+    &= \int_C \inParentheses{\sub{F}{rad} \, \versor{r} + \sub{F}{tan} \, \versor{\theta}} \cdot \versor{t} \, \dif s
+    \\
+    &= \int_C \sub{F}{rad} \underbrace{\versor{r} \cdot \versor{t}}_0 \dif s
+    + \int_C \sub{F}{tan} \, \versor{\theta} \cdot \versor{t} \, \dif s
+    \\
+    &= \int_C \underbrace{\norm{\sub{F}{tan} \, \versor{\theta}}}_{\sub{F}{tan}} \, \underbrace{\norm{\versor{t}}}_{=1} \, \underbrace{\cos{(\theta)}}_{=1} \dif s
+\end{align*}
+
+En tal caso, el producto interno del integrando pasa a ser una simple multiplicación entre magnitudes escalares.
+
+\begin{mdframed}[style=PropertyFrame]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Trabajo de fuerzas tangentes}
+    \begin{equation*}
+        W = \int_C \sub{F}{tan} \, \dif s
+    \end{equation*}
+\end{mdframed}
+
+Observar que $\norm{\sub{F}{tan}}$ puede no ser constante, mientras que $\theta=\ang{0}$ sí lo es.
+
+En una circunferencia, donde el radio no varía, se puede hacer un cambio de variable para expresar el elemento de arco $(\dif s)$ como un diferencial de ángulo $(\dif \theta)$ y poder así computar la integral.
+
+Coloquialmente hacemos tender los $\Delta$ a $\dif$ en la definición de longitud de arco (Sec. \ref{A:arcLength}).
+Formalmente, estamos calculando el diferencial $\dif s$ como sigue.
+
+El largo de arco en función del ángulo está dado por $s(\theta) = r \, \theta$ y su derivada es $s'(\theta) = r$ quedando el diferencial definido como $\dif s = r \, \dif \theta$.
+Reemplazando $\dif s$ en la definición \ref{defn:workLineIntegral} se tiene:
+
+\begin{mdframed}[style=PropertyFrame]
+    \begin{prop}
+        \label{prop:workOnCircumference}
+    \end{prop}
+    \cusTi{Trabajo de fuerzas tangentes a circunferencias}
+    \begin{equation*}
+        W = r \int_{\theta_0}^{\theta_1} \sub{F}{tan} \, \dif \theta
+    \end{equation*}
+\end{mdframed}
+
+
+\subsection{Trabajo de la fuerza Peso}
+
+Como se quiere calcular la integral de la fuerza Peso (Def.\ \ref{defn:weightForce}) que es constante, se aplica su definición teniendo en cuenta que $\norm{\Vec{g}} = g$, ya que está contenida en una sola dimensión.
+
+\begin{center}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/energia-4.pdf_tex}
+\end{center}
+
+Para trayectorias rectas, como el arco de curva es un segmento de recta, se integra con respecto a la distancia:
+\begin{align*}
+    W &= \int_C F \cdot \dif s
+    \\
+    W &= m \, g \int_{y_0}^{y_1} \dif y
+    \\
+    W &= m \, g \, \Delta y = \Delta \sub{E}{gra}
+\end{align*}
+
+La fuerza Peso tiene en todo momento y lugar la misma dirección y sentido, porque es constante.
+Si la trayectoria es circular, no se puede aplicar el cambio de variable polar (Prop. \ref{prop:workOnCircumference}) en la integral de línea a mansalva.
+Como se mencionó, esto se puede hacer solo cuando la fuerza y el diferencial de distancia tienen igual dirección y sentido.
+Por lo tanto, es necesario descomponer la fuerza peso para estudiar su componente tangencial:
+\begin{align*}
+    W &= \int_C F \cdot \dif s
+    \\
+    W &= r \int_{\theta_0}^{\theta_1} F \, \dif \theta
+    \\
+    W &= - m \, g \, r \int_{\theta_0}^{\theta_1} \sin(\theta)  \, \dif \theta
+    \\
+    W &= - m \, g \, r \, \big( \cos(\theta_1) - \cos(\theta_0) \big)
+    = \sub{E}{gra}
+\end{align*}
+
+
+\subsection{Trabajo de la fuerza elástica}
+
+Por comodidad de notación, se suele expresar el estiramiento $\Delta l$ como $x$ para definir la Fuerza Elástica (Def.\ \ref{defn:elasticForce}), ya que $l$ es la posición en el eje $x$ del extremo móvil del resorte.
+Como la trayectoria es recta, el arco de curva es un segmento de recta, y se integra con respecto a la distancia:
+\begin{align*}
+    W &= \int_C F \cdot \dif s
+    \\
+    W &= - k \int_{x_0}^{x_1} x \, \dif x
+    \\
+    W &= - \frac{k \inParentheses{x_1^2 - x_0^2}}{2} = \Delta \sub{E}{ela}
+\end{align*}
+
+
+\section{Fuerzas conservativas y disipativas}
+
+De manera intuitiva, uno puede esperar que los sistemas en la realidad siempre pierdan energía, y esto es cierto.
+Por ejemplo, un reloj de péndulo eventualmente se va a detener por el rozamiento con el aire, a menos que tenga un mecanismo eléctrico que lo mantenga andando.
+Un patinador que se lance entre dos rampas en su skate eventualmente va a frenarse, a menos que se impulse con las piernas en cada bajada.
+Un resorte en movimiento oscilatorio, eventualmente va a frenar por la fricción con el fluido en el que se mueve.
+
+Esto se debe a que los sistemas que se ven afectados por fuerzas disipativas, como la fricción, no conservan su energía mecánica.
+Dicho de otra forma, un sistema conserva la energía mecánica solo si realiza trabajo mediante fuerzas conservativas.
+
+Las fuerzas conservativas son producidas por campos de gradiente de fuerza.
+Calcular el trabajo de un campo de gradiente en cualquier trayectoria del espacio verifica las siguientes implicaciones, que son equivalentes entre si:
+\begin{itemize}
+    \item \textbf{Independencia de la trayectoria:} El trabajo de un punto al otro es igual, independientemente del camino que se tome, por más que un camino sea más largo y requiera de más recorrido aplicando la fuerza.
+    
+    \item \textbf{Trabajo nulo en trayectorias cerradas:} El trabajo de todo camino que empiece y termine en el mismo punto es nulo, se tome el camino que se tome.
+\end{itemize}
+
+Las fuerzas conservativas son aquellas que cumplen las condiciones anteriores.
+Por el contrario, las fuerzas disipativas son las que no cumplen alguna, y por ende las dos condiciones anteriores.
+
+
+\section[Principio de conservación de la energía]{Principio de conservación \\ de la energía}
+
+Un sistema puede intercambiar energía con su entorno en forma de trabajo, de calor, de masa y puede acumular energía en forma de energía cinética, potencial, interna, eléctrica, y otras.
+La relación entre todas las formas de acumular energía de un sistema, y todas las formas de transferencia de energía, viene dada por el principio de conservación de la energía.
+Este es la piedra angular de todas las formas de transferencias y energías mencionadas, aunque varias no se ven en este texto.
+
+El principio establece que si hay variación de la energía acumulada por el sistema $(\sub{E}{sis})$, entonces también va a haber transferencia $(T)$ de energía con el medio ambiente:
+\[ \Delta \sub{E}{sis} = \sum T \]
+
+Como se ve en la ecuación anterior, si hay variación de energía hay transferencia con el medio.
+Es decir, que si aumenta la energía del sistema disminuye la energía del medio y viceversa, de manera que la energía total, del medio más el sistema no varía, simplemente se transfiere de uno al otro:
+\[ \Delta \sub{E}{tot} = 0 \]
+
+En Mecánica Clásica se estudia un caso particular del principio de conservación de la energía, donde solo hay transferencia de energía por trabajo producido por una fuerza, y el sistema solo acumula energía mecánica (Def.\ \ref{defn:mechanicEnergy}).
+Bajo estas condiciones, se tiene:
+\begin{align*}
+    \sum \sub{W}{no con} &= \Delta \sub{E}{mec}
+    \\
+    \sum \sub{W}{con} &= - \Delta \sub{E}{pot}
+    \\
+    \sum \sub{W}{tot} &= \Delta \sub{E}{cin}
+\end{align*}
+
+Nótese que la tercer ecuación se deduce de sumar las dos primeras.
+Como la primer ecuación es la definición de trabajo de fuerzas disipativas, es razonable que la segunda reciba el signo negativo para poder realizar la suma.
+
+
+\section{Momento lineal}
+
+El momento o cantidad de movimiento es la razón por la cual en un choque entre dos cuerpos de masas muy distintas, el que sea muy masivo no va a alterar tanto su movimiento, mientras que el de menor masa va a cambiar drásticamente su velocidad.
+Por ejemplo, un camión que choque a una moto casi no se va a inmutar, mientras que la moto probablemente salga arrojada, por la arbolada.
+
+El momento o cantidad de movimiento de un cuerpo es una magnitud vectorial que se define como la masa del cuerpo por la velocidad del mismo.
+
+\begin{mdframed}[style=DefinitionFrame]
+    \begin{defn}
+        \label{defn:momentum}
+    \end{defn}
+    \cusTi{Momento}
+    \begin{equation*}
+        \Vec{P} = m \, \Vec{v}
+    \end{equation*}
+\end{mdframed}
+
+
+\section[Principio de conservación del momento]{Principio de conservación \\ del momento}
+
+Este principio se deduce de la definición de fuerza (Def.\ \ref{defn:force}) del capítulo \ref{cha:dinamics}:
+\[ \Vec{F} = m \, \frac{\Delta \Vec{v}}{\Delta t} \]
+
+El principio de conservación del momento establece que la variación del momento lineal es igual a la fuerza externa neta que se aplique en un cuerpo.
+Aplicando la definición de momento (Def.\ ~\ref{defn:momentum}) a la ecuación anterior, se tiene:
+\[ \Vec{F} = \frac{\Delta \Vec{P}}{\Delta t} \]
+
+Si definimos el impulso $(\Vec{I})$ como la variación del momento, el principio se puede expresar de la siguiente manera:
+\[ \Vec{F} \, \Delta t = \underbrace{\Delta \Vec{P}}_{\Vec{I}} \]
+
+Por lo tanto, si sobre un cuerpo no se aplican fuerzas externas, el momento lineal se conserva:
+
+\begin{mdframed}[style=PropertyFrame]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \Delta \Vec{P} = 0 \iff \sum \sub{F}{ext} = 0
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Colisiones}
+
+Como en los choques de cuerpos macroscópicos los intervalos de tiempos son muy cortos, sería poco preciso calcular una función de la fuerza con respecto al tiempo.
+Calcular el trabajo (Def.\ \ref{defn:workLineIntegral}) sería más engorroso ya que la Fuerza no sería constante, por las deformaciones que sufren las estructuras de los cuerpos en los choques.
+
+En estos casos se usa el principio de conservación del momento, ya que en todas las colisiones el momento se conserva.
+
+Las colisiones se clasifican en varios tipos, que nos permiten identificar patrones en diferentes situaciones.
+
+
+\subsection{Colisiones elásticas}
+
+Las colisiones elásticas son una idealización de las colisiones reales.
+En las colisiones elásticas, suponemos que la energía cinética se conserva:
+\[ \Delta \sub{E}{cin} = 0 \]
+
+Hay colisiones que son más aptas para ser estudiadas como elásticas.
+Es decir que algunos casos de choques reales se pueden estudiar como colisiones elásticas comentiendo un error casi nulo.
+
+
+\subsection{Colisiones inelásticas}
+
+Durante un choque de dos cuerpos macroscópicos las estructuras de los cuerpos se deforman.
+Cuando uno de los cuerpos es golpeado, parte de la energía que se le aplicó en forma de energía cinética se convierte en energía interna.
+Es decir, sus moléculas empiezan a oscilar como resortes y estas vibraciones internas aumentan la temperatura del cuerpo.
+
+El modelo de colisiónes inelásticas contempla la pérdida de energía cinética que se da durante el choque:
+\[ \Delta \sub{E}{cin} \neq 0 \]
+
+
+\subsection{Colisiones inelásticas plásticas}
+
+Un caso particular de las colisiones inelásticas son las plásticas.
+Al ser un caso particular de colisiones inelásticas, en las colisiones plásticas la energía no se conserva.
+\[ \Delta E_{cin} \neq 0 \]
+
+Normalmente en una colisión se espera que los cuerpos que chocan salgan disparados con diferentes velocidades.
+Dos cuerpos $A$ y $B$ que colisionen plásticamente se quedan unidos después de chocar, moviéndose con la misma velocidad final.
+\[ v_{FA} = v_{FB} = v_F \]
+
+
+\subsection{Explosiones ``inelásticas''}
+
+Si bien las explosiones no son colisiones, siguen el mismo modelo de análisis.
+Las explosiones se pueden pensar como un choque plástico que ocurren al revés en el tiempo.
+
+Como es imaginable, mucha energía cinética se disipa en calor:
+\[ \Delta E_{cin} \neq 0 \]
+
+De manera análoga a las colisiones plásticas, la velocidad inicial de los fragmentos es la misma:
+\[ v_{0A} = v_{0B} = v_0 \]
