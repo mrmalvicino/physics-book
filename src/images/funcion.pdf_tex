@@ -58,6 +58,6 @@
     \put(0.8262364,0.22838669){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.72479188\unitlength}\raggedright $x$\end{minipage}}}%
     \put(0.64392935,0.15085859){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.72479188\unitlength}\raggedright $x_0$\end{minipage}}}%
     \put(0.16098863,0.48773688){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.72479188\unitlength}\raggedright $y_0$\end{minipage}}}%
-    \put(0.69265926,0.4917344){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.72479188\unitlength}\raggedright $P=\sqb{x_0 , f(x)}$\end{minipage}}}%
+    \put(0.69265926,0.4917344){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.72479188\unitlength}\raggedright $P=\inBrackets{x_0 , f(x)}$\end{minipage}}}%
   \end{picture}%
 \endgroup%

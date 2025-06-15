@@ -69,7 +69,7 @@ A grandes rasgos, estas magnitudes se comprenden como sigue.
     \item La aceleración indica con qué fuerza se mueve.
 \end{itemize}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
         \label{eg:mag}
     \end{example}
@@ -96,7 +96,7 @@ Cabe destacar que sólo se estudian los movimientos en sí, y no sus causas, que
 La posición se modela matemáticamente como un vector en el espacio, cuyas coordenadas se expresan en un sistema de referencia determinado.
 En su forma más general, el vector posición se define como sigue.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:position}
     \end{defn}
@@ -110,7 +110,7 @@ Todas las coordenadas son funciones del tiempo, lo cual se pone de manifiesto en
 Las relaciones que las componentes del vector posición tienen con la variable $t$ se llaman \emph{ecuaciones horarias}, \emph{ecuaciones de movimiento}, o \emph{ecuaciones paramétricas}.
 
 A veces es necesario usar un vector pero basta con que tenga dos de las tres dimensiones espaciales.
-La posición de movimientos en dos dimensiones suele denotarse entonces como $\xyz(t)=\sqb{x(t)&y(t)}$ o lo que es lo mismo $\xyz(t)=x(t)\,\iVer + y(t)\,\jVer$ siendo $\iVer$ y $\jVer$ los versores canónicos.
+La posición de movimientos en dos dimensiones suele denotarse entonces como $\xyz(t)=\inBrackets{x(t)&y(t)}$ o lo que es lo mismo $\xyz(t)=x(t)\,\iVer + y(t)\,\jVer$ siendo $\iVer$ y $\jVer$ los versores canónicos.
 
 En muchos casos (como en el ejemplo \ref{eg:mag} del auto en la ruta), interesa solamente la distancia a una referencia (el número escrito en el cartel) y en ves de usar un vector $\xyz(t)$ se trabaja con un escalar, generalmente denotado $x(t)$.
 
@@ -121,7 +121,7 @@ O bien podemos referirnos a todo el recorrido, dado por la imagen de $\xyz(t)$ q
 A este recorrido se lo llama \emph{trayectoria}.
 La trayectoria es el espacio geométrico que ocupan todas las posiciones de un cuerpo en movimiento, dadas por $\xyz(t)$.
 
-En el siguiente gráfico se observa que una \emph{trayectoria} es el conjunto de posiciones sucesivas por las que pasa un cuerpo, mientras que $P_{t_\ith}=\sqb{x(t_\ith)&y(t_\ith)}$ es una de las posiciones que toma el cuerpo a lo largo de su trayectoria.
+En el siguiente gráfico se observa que una \emph{trayectoria} es el conjunto de posiciones sucesivas por las que pasa un cuerpo, mientras que $P_{t_\ith}=\inBrackets{x(t_\ith)&y(t_\ith)}$ es una de las posiciones que toma el cuerpo a lo largo de su trayectoria.
 
 \begin{center}
     \def\svgwidth{\linewidth}
@@ -131,7 +131,7 @@ En el siguiente gráfico se observa que una \emph{trayectoria} es el conjunto de
 Para toda trayectoria o fragmento de trayectoria se puede definir el desplazamiento, que es el vector que une el punto inicial con el final.
 Esto es, la resta entre ambos vectores:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:desplazamiento}
     \end{defn}
@@ -156,7 +156,7 @@ Pero también pueden darse otras menos comunes.
 
 A continuación se muestra un ejemplo de una trayectoria curva que representa el recorrido de un bote en una laguna, visto desde el cielo.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
         \label{eg:boatPosition}
     \end{example}
@@ -165,7 +165,7 @@ A continuación se muestra un ejemplo de una trayectoria curva que representa el
         A partir de la siguiente función de posición, describir cualitativamente el movimieto.
     \end{formatI}
     \begin{equation*}
-        \xyz:D \subseteq \setR \longrightarrow \setR^2 \tq \xyz(t) = \sqb{t^3\,\si{\metre\per\second^3}, t^2\,\si{\metre\per\second^2}}
+        \xyz:D \subseteq \setR \longrightarrow \setR^2 \tq \xyz(t) = \inBrackets{t^3\,\si{\metre\per\second^3}, t^2\,\si{\metre\per\second^2}}
     \end{equation*}
 
     \begin{center}
@@ -201,7 +201,7 @@ Intuitivamente, podemos entender a la velocidad como qué tan rápido cambia la 
 
 La velocidad media es la razón de cambio promedio de la posición con respecto del tiempo transcurrido.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Velocidad media}
@@ -214,7 +214,7 @@ La velocidad media es la razón de cambio promedio de la posición con respecto 
 
 Y la aceleración media es la razón de cambio promedio de la velocidad con respecto del tiempo.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Aceleración media}
@@ -245,12 +245,12 @@ Por lo tanto, la velocidad está definida como la primera derivada de la posici�
     \Vec{v}\left(t_0\right) = \lim_{t \to t_0} \dfrac{\xyz(t)-\xyz(t_0)}{t-t_0}
 \end{equation*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Velocidad (instantánea)}
     \begin{equation*}
-        \Vec{v}(t) = \dfrac{\dif}{\dif t} \xyz (t) = \sqb{\dfrac{\dif}{\dif t} x(t) & \dfrac{\dif}{\dif t} y(t)}
+        \Vec{v}(t) = \dfrac{\dif}{\dif t} \xyz (t) = \inBrackets{\dfrac{\dif}{\dif t} x(t) & \dfrac{\dif}{\dif t} y(t)}
     \end{equation*}
 \end{mdframed}
 
@@ -263,7 +263,7 @@ Y la aceleración está dada por la primera derivada de la velocidad, o lo que e
     \dfrac{\dif}{\dif t} \underbrace{\dfrac{\dif}{\dif t} \xyz (t)}_{\Vec{v}(t)}
 \end{gather*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Aceleración (instantánea)}
@@ -278,7 +278,7 @@ Y la aceleración está dada por la primera derivada de la velocidad, o lo que e
 
 Para referirse a la velocidad instante a instante, o a la aceleración instante a instante, la palabra ``instantánea'' suele darse por sobreentendida.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Bote en una laguna: Velocidad y aceleración.}
@@ -287,11 +287,11 @@ Para referirse a la velocidad instante a instante, o a la aceleración instante 
     \end{formatI}
     La posición está dada por:
     \begin{equation*}
-        \xyz(t) = \sqb{t^3\,\si{\metre\per\second^3}, t^2\,\si{\metre\per\second^2}}
+        \xyz(t) = \inBrackets{t^3\,\si{\metre\per\second^3}, t^2\,\si{\metre\per\second^2}}
     \end{equation*}
 
     Haciendo la primera derivada de la trayectoria obtenemos la velocidad:
-    \[ \Vec{v}(t) = \sqb{3\,t^2\,\si{\metre\per\second^3}, 2\,t\,\si{\metre\per\second^2}} \]
+    \[ \Vec{v}(t) = \inBrackets{3\,t^2\,\si{\metre\per\second^3}, 2\,t\,\si{\metre\per\second^2}} \]
 
     Obsérvese que $\Vec{v}(0\,\si{\second}) = [0, 0]\,\si{\metre\per\second}$.
     La velocidad en el origen es nula.
@@ -299,20 +299,20 @@ Para referirse a la velocidad instante a instante, o a la aceleración instante 
     Esto sólo puede lograrse frenando en medio del movimiento.
 
     Haciendo la segunda derivada de la posición, que es la derivada de la velocidad, obtenemos la aceleración:
-    \[ \Vec{a}(t) = \sqb{6\,t\,\si{\metre\per\second^3}, 2\,\si{\metre\per\second^2}} \]
+    \[ \Vec{a}(t) = \inBrackets{6\,t\,\si{\metre\per\second^3}, 2\,\si{\metre\per\second^2}} \]
 
     El hecho de que la aceleración tenga una componente $y$ constante indica la tendencia del bote a cambiar la dirección de su velocidad para que apunte en la dirección positiva del eje $y$.
     Esto es absolutamente consistente con el comportamiento de la velocidad.
     \begin{align*}
         \Vec{v} \left(-2\,\si{\second}\right)
-        &= \sqb{3 \left(-2\,\si{\second}\right)^2\,\si{\metre\per\second^3}, 2\left(-2\,\si{\second}\right)\,\si{\metre\per\second^2}}
+        &= \inBrackets{3 \left(-2\,\si{\second}\right)^2\,\si{\metre\per\second^3}, 2\left(-2\,\si{\second}\right)\,\si{\metre\per\second^2}}
         \\
-        &= \sqb{12, -4}\,\si{\metre\per\second}
+        &= \inBrackets{12, -4}\,\si{\metre\per\second}
         \\[1ex]
         \Vec{v} \left(2\,\si{\second}\right)
-        &= \sqb{3 \left(2\,\si{\second}\right)^2\,\si{\metre\per\second^3}, 2 \left(2\,\si{\second}\right)\,\si{\metre\per\second^2}}
+        &= \inBrackets{3 \left(2\,\si{\second}\right)^2\,\si{\metre\per\second^3}, 2 \left(2\,\si{\second}\right)\,\si{\metre\per\second^2}}
         \\
-        &= \sqb{12, 4}\,\si{\metre\per\second}
+        &= \inBrackets{12, 4}\,\si{\metre\per\second}
     \end{align*}
 
     Los resultados lo muestran claramente: la velocidad del bote en el muelle $A$ apunta en dirección de las $y$ negativas (sur) y, en el muelle $C$, en dirección de las positivas (norte).
@@ -403,7 +403,7 @@ Reemplazando $v(t)$ en $x(t)$, por sustitución se tiene:
 Esta ecuación significa que si se conoce la aceleración, la velocidad inicial, y la posición inicial de una partícula, se pueden predecir sus futuras posiciones y velocidades:
 \[ x(t) = \iint a(t) \, \dif t^2 + \int v(t_0) \, \dif t + x(t_0) \]
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:generalMovementEqn}
     \end{defn}
@@ -438,7 +438,7 @@ Por un lado, el caso en que la aceleración de la partícula es constante para t
 Y por otro lado, el caso en que la velocidad también lo es y la aceleración, además, es nula.
 De esta forma, se tienen las siguientes definiciones, respectivamente:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:cstAccelMovementEqn}
     \end{defn}
@@ -448,7 +448,7 @@ De esta forma, se tienen las siguientes definiciones, respectivamente:
     \end{equation*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:cstVelMovementEqn}
     \end{defn}
@@ -473,7 +473,7 @@ La ecuación de movimiento con velocidad constante (Def.\ \ref{defn:cstVelMoveme
 Por ahora, si el lector quiere verificar que si la aceleración es nula entonces la velocidad será constante, puede hacerlo derivando dos veces la trayectoria del MRU.
 Más adelante, en el capítulo \ref{cha:dinamics}, se enunciará la primera ley de Newton (Def.\ \ref{defn:NewtonFirstLaw}) que generaliza esta situación.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Auto en la ruta a velocidad constante}
@@ -512,7 +512,7 @@ Más adelante, en el capítulo \ref{cha:dinamics}, se enunciará la primera ley 
     Pero si se elige correctamente el sistema de referencia, basta con usar 1 dimensión, porque lo que importa es la variación de la distancia.
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Dos autos en sentido opuesto}
@@ -584,7 +584,7 @@ La diferencia entre los MRUV con aceleración gravitatoria $(g)$ y aquellos con 
     A continuación se dan algunos ejemplos aunque más adelante, para hacer un estudio más exhaustivo, se enunciará la segunda ley de Newton (Def.\ \ref{defn:NewtonSecondLaw}) que permite dar otro enfoque.
 \end{itemize}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Auto en la ruta con aceleración constante}
@@ -610,7 +610,7 @@ La diferencia entre los MRUV con aceleración gravitatoria $(g)$ y aquellos con 
     \end{gather*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Nave espacial despegando}
@@ -641,7 +641,7 @@ La caída libre es un tipo de MRUV, por lo que la trayectoria va a ser modelada 
 Como el cuerpo parte del reposo, la velocidad inicial es $v_0 = \SI{0}{\metre/\second}$.
 Si elegimos un sistema orientado positivamente hacia arriba y con el origen en el piso, la posición inicial $\left( x_0 \right)$ va a ser igual a $h$ y la aceleración $(a)$ va a ser negativa:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Función de posición de caída libre}
@@ -660,7 +660,7 @@ Al igual que la caída libre, el tiro vertical se modela con la ecuación de mov
 
 Ahora bien, en este caso se va a mantener el término lineal para incorporar el dato de la velocidad inicial, siendo su signo positivo si, al inicio del movimiento, el cuerpo estaba subiendo, y negativo si estaba bajando.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Función de posición del tiro vertical}
@@ -701,23 +701,23 @@ Al descomponer el movimiento para analizar cómo va a variar la cinemática en c
 
 A partir de este análisis, podemos definir la aceleración que rige el movimiento:
 \begin{equation*}
-    \Vec{a}(t) = \sqb{0 \, , \, -g}
+    \Vec{a}(t) = \inBrackets{0 \, , \, -g}
 \end{equation*}
 
 Y así también la velocidad, que surge al integrar la aceleración:
 \begin{equation*}
-    \Vec{v}(t) = \sqb{v_{0x} \, , \, -g \left(t-t_0\right) + v_{0y}}
+    \Vec{v}(t) = \inBrackets{v_{0x} \, , \, -g \left(t-t_0\right) + v_{0y}}
 \end{equation*}
 
 Obteniendo así la posición al integrar nuevamente.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Función de posición del tiro oblicuo}
     \begin{equation*}
         \scale{0.92}{
-        \xyz(t) = \sqb{v_{0x} \left(t-t_0\right) \, , \, \frac{-g}{2} \left(t-t_0\right)^2 + v_{0y} \left(t-t_0\right) + y_0}
+        \xyz(t) = \inBrackets{v_{0x} \left(t-t_0\right) \, , \, \frac{-g}{2} \left(t-t_0\right)^2 + v_{0y} \left(t-t_0\right) + y_0}
         }
     \end{equation*}
 \end{mdframed}
@@ -725,7 +725,7 @@ Obteniendo así la posición al integrar nuevamente.
 Veamos la fórma que tiene el recorrido de un cuerpo arrojado en tiro oblicuo.
 
 Como estamos estudiando un único cuerpo podemos establecer $t_0=\SI{0}{\second}$ ya que para estudiar una única trayectoria no es necesario considerar un retraso temporal.
-Las coordenadas $x(t)$ e $y(t)$ del vector $\xyz(t) = \sqb{x(t),y(t)}$ quedan entonces dadas por:
+Las coordenadas $x(t)$ e $y(t)$ del vector $\xyz(t) = \inBrackets{x(t),y(t)}$ quedan entonces dadas por:
 \begin{equation*}
     \left\{
     \begin{aligned}
@@ -767,7 +767,7 @@ Concluyendo que:
 
 \begin{itemize}
     \item
-    La componente vertical de la velocidad $(v_y)$ va disminuyendo hasta que se hace nula en el punto $\sqb{x_h, y_h}$, donde la altura es máxima y el módulo de la velocidad es mínimo (pero no nulo).
+    La componente vertical de la velocidad $(v_y)$ va disminuyendo hasta que se hace nula en el punto $\inBrackets{x_h, y_h}$, donde la altura es máxima y el módulo de la velocidad es mínimo (pero no nulo).
     
     \item
     El módulo de la velocidad es máximo en el punto donde la altura es mínima $(y=\SI{0}{\metre})$.
@@ -803,7 +803,7 @@ Entonces, si consideramos $y_0=\SI{0}{\metre}$ como un caso particular, el alcan
 
 Y, finalmente, usando la propiedad trigonométrica del seno de ángulo doble que implica $2 \cos(\theta) \sin(\theta)=\sin(2\theta)$ se obtiene
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:oblicuoAlcance}
     \end{prop}
@@ -845,7 +845,7 @@ O bien, usando trigonometría podemos expresar el resultado en función de la no
 
 Y, finalmente, usando la propiedad trigonométrica del seno de ángulo doble se obtiene
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Alcance de tiro oblicuo}
@@ -873,7 +873,7 @@ Lo cual significa que el alcance $x_d$ va a tomar un valor de $v_0^2/g$ como má
 Además, dado que las funciones senoidales son simétricas con respecto a un máximo, vemos que el alcance va a ser el mismo para ángulos simétricos con respecto de $\ang{45}$.
 Esto se traduce en la siguiente propiedad.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     Sea $\alpha>0$ el módulo de la diferencia entre $\ang{45}$ y el ángulo de tiro ($\theta$).
@@ -914,7 +914,7 @@ La posición $(\xyz)$ se puede expresar como un vector que rota con un extremo f
 Las componentes del vector cambian conforme pasa el tiempo.
 Pero el largo del vector posición es siempre el mismo, y es equivalente al radio $(r)$ del círculo.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:circularMovRadius}
     \end{prop}
@@ -926,7 +926,7 @@ Pero el largo del vector posición es siempre el mismo, y es equivalente al radi
 
 En un movimiento curvilíneo cualquiera, la velocidad ``neta'' puede definirse a partir de la suma entre las velocidades tangencial y radial.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Velocidad en polares}
@@ -951,7 +951,7 @@ Si existiese una componente radial de velocidad se podría formar una trayectori
 
 Pero $\nnorm{\Vec{v}_r} = \SI{0}{\metre\per\second}$ ya que para que la trayectoria sea circular se tiene que cumplir la siguiente propiedad.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:circularMovVel}
     \end{prop}
@@ -969,7 +969,7 @@ El movimiento circular puede o no tener aceleración tangencial $(\Vec{a}_ t)$.
 La aceleración tangencial puede ser positiva o negativa, dependiendo de la situación.
 De existir, esta hace que el cuerpo se mueva cada vez más (o menos) rápido sobre el círculo.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Aceleración en polares}
@@ -985,7 +985,7 @@ Ergo, el ángulo es una función escalar del tiempo.
 Es determinante qué tan rápido aumenta o disminuye el ángulo.
 La tasa de cambio del ángulo con respecto del tiempo se conoce como velocidad angular $(\omega)$.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:angularVel}
     \end{defn}
@@ -997,7 +997,7 @@ La tasa de cambio del ángulo con respecto del tiempo se conoce como velocidad a
 
 Con el mismo criterio, se define la aceleración angular $(\alpha)$ como la derivada de la velocidad angular con respecto del tiempo.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:angularAccel}
     \end{defn}
@@ -1026,7 +1026,7 @@ La derivada de la derecha es la velocidad angular.
 Indica qué tan rápido aumenta el ángulo.
 Se obtiene así una relación entre la velocidad angular (Def.\ \ref{defn:angularVel}) y la velocidad tangencial ($v_t$).
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:circularVel}
     \end{prop}
@@ -1037,7 +1037,7 @@ Se obtiene así una relación entre la velocidad angular (Def.\ \ref{defn:angula
 
 Derivando nuevamente, de manera similar se relaciona la aceleración angular (Def.\ \ref{defn:angularAccel}) con la tangencial ($a_t$).
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:circularAccel}
     \end{prop}
@@ -1048,7 +1048,7 @@ Derivando nuevamente, de manera similar se relaciona la aceleración angular (De
 
 A partir de las conclusiones anteriores, siguiendo el mismo razonamiento que se usó para definir la ecuación de movimiento (Def. \ref{defn:generalMovementEqn}), se define la variación del ángulo en función del tiempo o \emph{posición angular}.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:anglePosition}
     \end{defn}
@@ -1074,7 +1074,7 @@ Además, se incorporan las siguientes propiedades particulares del MCU.
 
 Como la velocidad angular y el radio son constantes, el módulo de la velocidad también lo es, de acuerdo a la propiedad \ref{prop:circularVel}.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \begin{equation*}
@@ -1084,7 +1084,7 @@ Como la velocidad angular y el radio son constantes, el módulo de la velocidad 
 
 Velocidad angular constante implica aceleración angular cero lo cual, a su vez, implica aceleración tangencial cero (Prop.~\ref{prop:circularAccel}).
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Aceleración de MCU}
@@ -1109,7 +1109,7 @@ Coloquialmente, como $v_t$ es constante, ``cambiamos los $\dif$ por $\Delta$''.
 
 En la relación anterior, interesa particularmente el siguiente intervalo de tiempo, llamado \emph{período}.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Período}
@@ -1124,7 +1124,7 @@ Así,
 Ahora bien, $v_t = \omega r$ por la propiedad \ref{prop:circularVel}.
 Esto conduce a la relación fundamental del MCU.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:period}
     \end{prop}
@@ -1145,7 +1145,7 @@ En cambio, si la frecuencia mide la cantidad de vueltas en un minuto, la unidad 
 Si el cuerpo da más vueltas en un segundo, significa que tarda menos tiempo en dar cada vuelta.
 Es decir, si la frecuencia es mayor, el período es menor, y viceversa: $f$ es inversamente proporcional a $T$.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Frecuencia y período}
@@ -1156,7 +1156,7 @@ Es decir, si la frecuencia es mayor, el período es menor, y viceversa: $f$ es i
 
 Al sustitur esta relación en la propiedad \ref{prop:period}, resulta
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Velocidad angular y frecuencia}
@@ -1218,7 +1218,7 @@ Tomando el límite cuando $\Delta t \to 0$ quedan definidos los módulos de la v
   v \cdot \dfrac{v}{r} = a_c
 \]
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:}
     \end{prop}
@@ -1231,7 +1231,7 @@ Tomando el límite cuando $\Delta t \to 0$ quedan definidos los módulos de la v
 Como se mencionó anteriormente, en un MCU la aceleración angular ($\alpha$) es nula, puesto que la velocidad angular ($\omega$) es constante.
 Por lo tanto, denominando $\varphi$ al ángulo inicial, si $t_0=\SI{0}{\second}$, el ángulo en función del tiempo va a estar dado según la definición \ref{defn:anglePosition}.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Posición angular del MCU}
@@ -1244,13 +1244,13 @@ De manera que podemos dar con las ecuaciones de movimiento considerando la geome
 Ver sección \ref{A:polarCoordinates} del anexo.
 Luego, el vector que describe la posición (Def. \ref{defn:position}) de un MCU se define a continuación.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:MCUmovementEqns}
     \end{defn}
     \cusTi{Función de posición del MCU}
     \begin{equation*}
-        \xyz(t) = \sqb{r \cos{(\omega t + \varphi)} &,& r \sin{(\omega t + \varphi)}}
+        \xyz(t) = \inBrackets{r \cos{(\omega t + \varphi)} &,& r \sin{(\omega t + \varphi)}}
     \end{equation*}
 \end{mdframed}
 
@@ -1269,7 +1269,7 @@ A saber:
 
 Denominando $\varphi$ al ángulo inicial, si $t_0=\SI{0}{\second}$, el ángulo en función del tiempo va a estar dado según la definición \ref{defn:anglePosition} como sigue.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Posición angular del MCUV}
@@ -1282,13 +1282,13 @@ De manera que podemos dar con las ecuaciones de movimiento considerando la geome
 Ver sección \ref{A:polarCoordinates} del anexo.
 Luego, el vector que describe la posición (Def. \ref{defn:position}) de un MCUV se define a continuación.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Función de posición del MCUV}
     \begin{equation*}
         \scale{0.94}{
-        \xyz(t) = \sqb{r \cos{\left(\frac{\alpha}{2} \, t^2 + \omega t + \varphi\right)} \, , \, r \sin{\left(\frac{\alpha}{2} \, t^2 + \omega t + \varphi\right)}}
+        \xyz(t) = \inBrackets{r \cos{\left(\frac{\alpha}{2} \, t^2 + \omega t + \varphi\right)} \, , \, r \sin{\left(\frac{\alpha}{2} \, t^2 + \omega t + \varphi\right)}}
         }
     \end{equation*}
 \end{mdframed}
@@ -1316,7 +1316,7 @@ Evidentemente hay que discriminar qué queremos graficar.
     Esto se hace muchísimo en física, ya que nos interesa analizar la razón de cambio entre las variables dependientes e independientes, que es la pendiente de estos gráficos.
 \end{itemize}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Bote en una laguna: Gráficos}
@@ -1406,7 +1406,7 @@ El punto indica el origen de coordenadas, las flechas la dirección del movimien
 Finalmente, podemos clasificar los sistemas en abiertos o cerrados dependiendo de si el sistema intercambia o no masa con el medio ambiente.
 Y en aislado o no aislado dependiendo de si el sistema intercambia o no energía con el medio ambiente.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Bote en una laguna: sistemas de referencia}
@@ -1419,7 +1419,7 @@ Y en aislado o no aislado dependiendo de si el sistema intercambia o no energía
     Para el sistema de referencia planteado en el ejemplo, el origen está en el punto cuspidal de la curva y los ejes están orientados positivamente, positivo hacia el este el eje $x$ y positivo hacia el norte el eje $y$.
     La ecuación de movimiento y su gráfico son los ya vistos:
     \begin{equation*}
-        \xyz(t) = \sqb{t^3 \, \si{\metre\per\second^3} \, , \, t^2 \, \si{\metre\per\second^2}}
+        \xyz(t) = \inBrackets{t^3 \, \si{\metre\per\second^3} \, , \, t^2 \, \si{\metre\per\second^2}}
     \end{equation*}
     
     \begin{center}
@@ -1429,7 +1429,7 @@ Y en aislado o no aislado dependiendo de si el sistema intercambia o no energía
     
     Pero podemos describir el mismo movimiento, con los ejes orientados de igual forma, y el origen a la izquierda.
     Si es así, la ecuación de movimiento y el gráfico de la trayectoria pasan a ser los siguientes:
-    \[ \xyz(t) = \sqb{(t-1)^3 \, \si{\metre\per\second^3} \, , \, (t-1)^2 \, \si{\metre\per\second^2}} \quad t \in [0;2] \]
+    \[ \xyz(t) = \inBrackets{(t-1)^3 \, \si{\metre\per\second^3} \, , \, (t-1)^2 \, \si{\metre\per\second^2}} \quad t \in [0;2] \]
     
     \begin{center}
         \def\svgwidth{\linewidth}
@@ -1438,7 +1438,7 @@ Y en aislado o no aislado dependiendo de si el sistema intercambia o no energía
     
     O bien, podemos describir el movimiento, con el origen como en el sistema $ii$ pero con los ejes orientados de manera inversa.
     Y en este caso, la ecuación de movimiento y sería la siguiente y la figura de la izquierda a continuación su gráfico:
-    \[ \xyz(t)= \sqb{(t+1)^3 \, \si{\metre\per\second^3} \, , \, (t+1)^2 \, \si{\metre\per\second^2}} \quad t \in [0;2] \]
+    \[ \xyz(t)= \inBrackets{(t+1)^3 \, \si{\metre\per\second^3} \, , \, (t+1)^2 \, \si{\metre\per\second^2}} \quad t \in [0;2] \]
     
     \begin{center}
         \def\svgwidth{\linewidth}
@@ -1474,7 +1474,7 @@ La definición de Fuerza, surge para dar nombre a aquello que hace que un cuerpo
 Se podría concluir entonces, que la Fuerza es la razón de cambio de la velocidad multiplicada por la masa.
 De esta conclusión se deduce, además, que la fuerza es una magnitud vectorial al igual que la velocidad.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:force}
     \end{defn}
@@ -1496,7 +1496,7 @@ Actualmente, se los considera a ambos los creadores del cálculo infinitesimal.
 
 \section{Leyes de Newton}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:NewtonFirstLaw}
     \end{defn}
@@ -1507,7 +1507,7 @@ Actualmente, se los considera a ambos los creadores del cálculo infinitesimal.
     \end{equation*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:NewtonSecondLaw}
     \end{defn}
@@ -1518,7 +1518,7 @@ Actualmente, se los considera a ambos los creadores del cálculo infinitesimal.
     \end{equation*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:NewtonThirdLaw}
     \end{defn}
@@ -1596,7 +1596,7 @@ En ocasiones se usa la tercer ecuación para calcular el ángulo de la fuerza:
 
 Todos los cuerpos con masa se atraen entre sí según la ley de gravitación universal, enunciada a continuación.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Fuerza gravitatoria}
@@ -1625,7 +1625,7 @@ Considerando la masa de la Tierra $m_2=5.97 \times 10^{24} \, \si{\kilo\gram}$ y
 
 Pudiendo definir así la fuerza Peso, causante de las trayectorias que se vean afectadas por la aceleración de la gravedad.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:weightForce}
     \end{defn}
@@ -1665,7 +1665,7 @@ Esta fuerza existe solo cuando un cuerpo está ejerciendo fuerza sobre la superf
 
 Es importante notar que la fuerza Normal $(\Vec{N})$ no es el par de reacción de la fuerza Peso $(\Vec{\weight})$, ya que los pares de acción y reacción se dan entre dos cuerpos distintos y tanto el peso como la normal son fuerzas que realiza por un lado la Tierra y por otro una superficie sobre el mismo cuerpo.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Cajas sobre una mesa}
@@ -1725,7 +1725,7 @@ Es importante notar que la fuerza Normal $(\Vec{N})$ no es el par de reacción d
 
 La fuerza de Tensión $(\Vec{T})$ es una fuerza de vínculo que se da cuando hay dos o más cuerpos unidos, interactuando mediante una cuerda, un hilo, una cadena, un cable, una barra rígida o cualquier objeto que verifique las siguientes hipótesis de vínculo:
 \begin{itemize}
-  \item \concept{La masa del vínculo es despreciable:}
+  \item \textbf{La masa del vínculo es despreciable:}
 
   Bajo esta hipótesis, por la segunda ley de Newton (Def.\ \ref{defn:NewtonSecondLaw}), podemos considerar que la tensión en ambos extremos del vínculo es la misma:
   \begin{gather*}
@@ -1736,7 +1736,7 @@ La fuerza de Tensión $(\Vec{T})$ es una fuerza de vínculo que se da cuando hay
      \therefore T_{AB} \approx T_{BA}
   \end{gather*}
   
-  \item \concept{El largo del vínculo es inextensible:}
+  \item \textbf{El largo del vínculo es inextensible:}
 
   Bajo esta hipótesis, podemos concluir que la aceleración de los dos cuerpos unidos va a ser la misma:
   \begin{gather*}
@@ -1750,7 +1750,7 @@ La fuerza de Tensión $(\Vec{T})$ es una fuerza de vínculo que se da cuando hay
   \end{gather*}
 \end{itemize}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Dos cuerpos atados en horizontal}
@@ -1799,7 +1799,7 @@ Podemos extrapolar situaciones más complejas a partir del modelo planteado ante
 Si un sistema tiene una polea fija, podemos suponer que esta no genera fricción con la cuerda y que la masa de la polea es despreciable.
 A continuación se muestra un sistema un poco más complejo, que bajo estas hipótesis se puede tratar como un caso análogo al anterior, donde la fuerza externa ahora va a ser $\Vec{F} = \Vec{\weight}$, lo cual se va a ver reflejado en el resultado.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{Dos cuerpos atados mediante poleas fijas}
@@ -1869,7 +1869,7 @@ Es importante notar que el estiramiento $(\Delta l)$ puede ser negativo, ya que 
 
 De esta forma, para definir el sentido de la fuerza, si consideramos que el sistema de referencia es positivo hacia donde se estira el resorte, se tiene que agregar un signo negativo a la magnitud, para que efectivamente el primer caso sea negativo y el segundo positivo, ya que $\Delta l$ es positivo y negativo respectivamente.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:elasticForce}
     \end{defn}
@@ -1910,7 +1910,7 @@ La fuerza de fricción es aquella que hace que los cuerpos presenten una resiste
 Su naturaleza es microscópica, ya que existe debido a las imperfecciones de contacto entre las moléculas de las superficies.
 La Fuerza de Rozamiento es proporcional a la Fuerza Normal que se de entre las superficies de contacto:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Fuerza de fricción en superficies}
@@ -1956,7 +1956,7 @@ Cuanto más rápido se mueva el cuerpo, más significativos van a ser los choque
 Pero además, eventualmente cuando los choques hayan frenado casi por completo al cuerpo, el fluido va a oponer poca resistencia al movimiento.
 Se define así, la fuerza de fricción en fluidos que va a ser proporcional a la velocidad del cuerpo y a una constante $(b)$ que está relacionada con la viscosidad del fluido.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:fluidFrictionForce}
     \end{defn}
@@ -2134,7 +2134,7 @@ De la primer ecuación del sistema anterior:
 
 Al escribir la aceleración como la segunda derivada de la posición, se deduce una ecuación lineal diferencial de segundo orden, igualada a una constante:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Ecuación diferencial de MAS en resorte horizontal}
@@ -2181,7 +2181,7 @@ La solución particular surge de evaluar $\ddot{x} = 0$ ya que eventualmente la 
 
 Sumando la solución homogénea con la particular, se obtiene la solución general, dada a continuación.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:solMAShorizontal}
     \end{defn}
@@ -2198,7 +2198,7 @@ La frecuencia, en cambio, está dada por las condiciones dinámicas del sistema,
 El hecho de que el resultado obtenido sea una familia de funciones y no una única función significa que, dependiendo de los valores de amplitud y fase que se tomen va a representarse uno de los infinitos movimientos que puedan darse.
 Por lo tanto, el resultado final que describa el movimiento en cuestión va a estar dado por las condiciones iniciales según cada situación.
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{MAS en resorte horizontal inicialmente perturbado}
@@ -2278,7 +2278,7 @@ La sumatoria de fuerzas con el sistema de referencia por convención (positivo e
     m \, a = m \, g - k \, x + k \, l_0
 \end{gather*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:}
     \end{defn}
@@ -2311,7 +2311,7 @@ Sumando ambas soluciones, se tiene la familia de funciones de posición que son 
     x(t) = x_h(t) + x_p
 \end{equation*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Solución general de MAS en resorte vertical}
@@ -2320,7 +2320,7 @@ Sumando ambas soluciones, se tiene la familia de funciones de posición que son 
     \end{equation*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{MAS en resorte vertical inicialmente estirado}
@@ -2370,7 +2370,7 @@ Sumando ambas soluciones, se tiene la familia de funciones de posición que son 
     \]
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame2]
+\begin{mdframed}[style=ExampleFrame]
     \begin{example}
     \end{example}
     \cusTi{MAS en resorte vertical inicialmente perturbado}
@@ -2408,7 +2408,7 @@ Analizando el eje tangencial, en el cual la fuerza restauradora tiene más relev
 Donde $\alpha$ es la aceleración angular.
 Y al expresarla como $\alpha = \ddot{\theta}$, la segunda derivada de la posición angular, se deduce una ecuación diferencial:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Ecuación diferencial de MAS en péndulo}
@@ -2456,7 +2456,7 @@ La ecuación de movimiento se puede deducir haciendo la sumatoria de fuerzas seg
     m \, \ddot{x} = - k \, x - b \, \dot{x}
 \end{gather*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Ecuación diferencial de MAA en resorte horizontal}
@@ -2531,7 +2531,7 @@ Si una función compleja de variable real satisface una ecuación diferencial or
 
 Pudiendo usar cualquiera de ambas como solución:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Solución general de MAA en resorte horizontal}
@@ -2663,7 +2663,7 @@ Al hacer la sumatoria de fuerzas con el origen de coordenadas en $l_0$, se deduc
     \ddot{x} + \gamma \, \dot{x} + \omega_0^2 \, x  = \frac{F_0 \cos(\omega \, t)}{m}
 \end{gather*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Ecuación diferencial de MAF en resorte horizontal}
@@ -2733,7 +2733,7 @@ Ahora que se tiene $X = B - \iu \, C$ expresado en forma binomial se puede calcu
     &= A_0 \left[ \left(\omega_0^2 - \omega^2 \right)^2 + \left( \gamma \, \omega \right)^2 \right]^{\tfrac{1}{2}-1}
 \end{align*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Módulo de la amplitud compleja de un MAF}
@@ -2752,7 +2752,7 @@ Y su fase ($\theta$) por definición:
     }
 \end{align*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Fase de la amplitud compleja de un MAF}
@@ -2768,7 +2768,7 @@ Para reemplazar el $X$ calculado y reescribir $\fasor{x}_p$ de la siguiente mane
 
 Finalmente, sumando la solución homogénea con $x_p(t) = \Re \left[ \fasor{x}_p(t) \right]$ se tiene que la solución general es:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Solución general de MAF en resorte horizontal}
@@ -2799,7 +2799,7 @@ En mecánica clásica, se estudian los siguientes tipos de energía mecánica.
 
 La energía cinética es aquella que tiene un cuerpo por estar en movimiento, ya que es proporcional a su velocidad.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Energía cinética}
@@ -2810,7 +2810,7 @@ La energía cinética es aquella que tiene un cuerpo por estar en movimiento, ya
 
 La energía potencial gravitatoria es aquella que tiene un cuerpo por estar a cierta distancia del centro de masa de un sistema.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Energía potencial gravitatoria}
@@ -2821,7 +2821,7 @@ La energía potencial gravitatoria es aquella que tiene un cuerpo por estar a ci
 
 La energía potencial elástica es aquella que tiene un cuerpo por estar comprimiendo un resorte.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Energía potencial elástica}
@@ -2832,7 +2832,7 @@ La energía potencial elástica es aquella que tiene un cuerpo por estar comprim
 
 La energía potencial es toda aquella que surge a partir de un campo de gradiente.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Energía potencial}
@@ -2843,7 +2843,7 @@ La energía potencial es toda aquella que surge a partir de un campo de gradient
 
 La energía mecánica total de un cuerpo es la suma de energía cinética y potencial que el cuerpo tenga.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:mechanicEnergy}
     \end{defn}
@@ -2875,12 +2875,12 @@ Para el segmento recto comprendido entre los puntos $\xyz_0$ y $\xyz_1$, vemos q
 
 Por trigonometría vemos que:
 \begin{equation*}
-    \sub{F}{tan} = \nnorm{\vec{F}} \cos\bb{\theta}
+    \sub{F}{tan} = \nnorm{\vec{F}} \cos\inParentheses{\theta}
 \end{equation*}
 
 El trabajo se define multiplicando la componente de fuerza que está contibuyendo al sentido de movimiento por la distancia de desplazamiento.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
     \end{defn}
     \cusTi{Trabajo}
@@ -2900,16 +2900,16 @@ En el caso de la trayectoria anterior, se observa que fuera del tramo recto el �
     \input{./images/energia-3.pdf_tex}
 \end{center}
 
-Aplicando la propiedad $\vec{u} \cdot \vec{v} = \nnorm{\vec{u}} \, \nnorm{\vec{v}} \cos\bb{\theta}$ para el producto interno y luego integrando, se tiene:
+Aplicando la propiedad $\vec{u} \cdot \vec{v} = \nnorm{\vec{u}} \, \nnorm{\vec{v}} \cos\inParentheses{\theta}$ para el producto interno y luego integrando, se tiene:
 \begin{align*}
-    \Delta W &= \nnorm{\vec{F}} \, \nnorm{\Delta \vec{r}} \cos\bb{\theta}
+    \Delta W &= \nnorm{\vec{F}} \, \nnorm{\Delta \vec{r}} \cos\inParentheses{\theta}
     \\[1ex]
     &= \vec{F} \cdot \Delta \xyz
     \\[1ex]
     W = \int \dif W &= \int_C \vec{F} \cdot \dif \xyz
 \end{align*}
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:workLineIntegral}
     \end{defn}
@@ -2941,7 +2941,7 @@ Si se logra descomponer al campo de fuerzas en una componente tangencial y otra 
     \\
     &= \int_C \Vec{F} \cdot \versor{t} \, \dif s
     \\
-    &= \int_C \bb{\sub{F}{rad} \, \versor{r} + \sub{F}{tan} \, \versor{\theta}} \cdot \versor{t} \, \dif s
+    &= \int_C \inParentheses{\sub{F}{rad} \, \versor{r} + \sub{F}{tan} \, \versor{\theta}} \cdot \versor{t} \, \dif s
     \\
     &= \int_C \sub{F}{rad} \underbrace{\versor{r} \cdot \versor{t}}_0 \dif s
     + \int_C \sub{F}{tan} \, \versor{\theta} \cdot \versor{t} \, \dif s
@@ -2951,7 +2951,7 @@ Si se logra descomponer al campo de fuerzas en una componente tangencial y otra 
 
 En tal caso, el producto interno del integrando pasa a ser una simple multiplicación entre magnitudes escalares.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \cusTi{Trabajo de fuerzas tangentes}
@@ -2970,7 +2970,7 @@ Formalmente, estamos calculando el diferencial $\dif s$ como sigue.
 El largo de arco en función del ángulo está dado por $s(\theta) = r \, \theta$ y su derivada es $s'(\theta) = r$ quedando el diferencial definido como $\dif s = r \, \dif \theta$.
 Reemplazando $\dif s$ en la definición \ref{defn:workLineIntegral} se tiene:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
         \label{prop:workOnCircumference}
     \end{prop}
@@ -3024,7 +3024,7 @@ Como la trayectoria es recta, el arco de curva es un segmento de recta, y se int
     \\
     W &= - k \int_{x_0}^{x_1} x \, \dif x
     \\
-    W &= - \frac{k \bb{x_1^2 - x_0^2}}{2} = \Delta \sub{E}{ela}
+    W &= - \frac{k \inParentheses{x_1^2 - x_0^2}}{2} = \Delta \sub{E}{ela}
 \end{align*}
 
 
@@ -3041,9 +3041,9 @@ Dicho de otra forma, un sistema conserva la energía mecánica solo si realiza t
 Las fuerzas conservativas son producidas por campos de gradiente de fuerza.
 Calcular el trabajo de un campo de gradiente en cualquier trayectoria del espacio verifica las siguientes implicaciones, que son equivalentes entre si:
 \begin{itemize}
-    \item \concept{Independencia de la trayectoria:} El trabajo de un punto al otro es igual, independientemente del camino que se tome, por más que un camino sea más largo y requiera de más recorrido aplicando la fuerza.
+    \item \textbf{Independencia de la trayectoria:} El trabajo de un punto al otro es igual, independientemente del camino que se tome, por más que un camino sea más largo y requiera de más recorrido aplicando la fuerza.
     
-    \item \concept{Trabajo nulo en trayectorias cerradas:} El trabajo de todo camino que empiece y termine en el mismo punto es nulo, se tome el camino que se tome.
+    \item \textbf{Trabajo nulo en trayectorias cerradas:} El trabajo de todo camino que empiece y termine en el mismo punto es nulo, se tome el camino que se tome.
 \end{itemize}
 
 Las fuerzas conservativas son aquellas que cumplen las condiciones anteriores.
@@ -3084,7 +3084,7 @@ Por ejemplo, un camión que choque a una moto casi no se va a inmutar, mientras 
 
 El momento o cantidad de movimiento de un cuerpo es una magnitud vectorial que se define como la masa del cuerpo por la velocidad del mismo.
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=DefinitionFrame]
     \begin{defn}
         \label{defn:momentum}
     \end{defn}
@@ -3109,7 +3109,7 @@ Si definimos el impulso $(\Vec{I})$ como la variación del momento, el principio
 
 Por lo tanto, si sobre un cuerpo no se aplican fuerzas externas, el momento lineal se conserva:
 
-\begin{mdframed}[style=MyFrame1]
+\begin{mdframed}[style=PropertyFrame]
     \begin{prop}
     \end{prop}
     \begin{equation*}

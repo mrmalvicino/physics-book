@@ -5,27 +5,40 @@
     \DeclareSIUnit{\rpm}{rpm}
     \DeclareSIUnit{\atmosphere}{atm}
 
-\usepackage[framemethod=TikZ]{mdframed} % Define \begin{mdframed}[style=MyFrame1]
+\usepackage[framemethod=TikZ]{mdframed} % Define \begin{mdframed}[style=MyFrame]
 
-    \mdfdefinestyle{MyFrame1}
-    {linecolor=black!80!gray,
-    outerlinewidth=0.5pt,
-    roundcorner=0pt,
-    innertopmargin=15pt,
-    innerbottommargin=20pt,
-    innerrightmargin=15pt,
-    innerleftmargin=15pt,
-    backgroundcolor=gray!30!white}
+    \mdfdefinestyle{DefinitionFrame}{
+        linecolor=black!90!gray,
+        outerlinewidth=0.5pt,
+        roundcorner=0pt,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerrightmargin=10pt,
+        innerleftmargin=10pt,
+        backgroundcolor=gray!10!white
+    }
 
-    \mdfdefinestyle{MyFrame2}
-    {linecolor=white,
-    outerlinewidth=0.5pt,
-    roundcorner=10pt,
-    innertopmargin=15pt,
-    innerbottommargin=20pt,
-    innerrightmargin=15pt,
-    innerleftmargin=15pt,
-    backgroundcolor=gray!20!white}
+    \mdfdefinestyle{PropertyFrame}{
+        linecolor=black!90!gray,
+        outerlinewidth=0.5pt,
+        roundcorner=0pt,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerrightmargin=10pt,
+        innerleftmargin=10pt,
+        backgroundcolor=gray!10!white
+    }
+
+    \mdfdefinestyle{ExampleFrame}{
+        linecolor=white,
+        outerlinewidth=0.5pt,
+        roundcorner=10pt,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerrightmargin=10pt,
+        innerleftmargin=10pt,
+        backgroundcolor=gray!15!white
+    }
 
 \usepackage{graphicx}
     \graphicspath{{./images/}} % Define \graphicspath{{dir1}{dir2}} para incluir imágenes que estén en los directorios dir1 y dir2
@@ -40,3 +53,4 @@
 \usepackage{pdfpages} % Define \includepdf
 \usepackage{multicol} % Entorno de formato en columnas
 \usepackage{comment} % Comenta todo entre \begin{comment} \end{comment}
+\usepackage{xparse} % Comandos con condicionales y varios parámetros opcionales
