@@ -39,6 +39,15 @@ Contiene herramientas matemáticas básicas necesarias para el desarrollo de los
 &nbsp;
 Cada vez que se realiza un cambio, una nueva versión del documento es compilada y publicada en [Releases](https://github.com/mrmalvicino/physics-book/releases) automáticamente.
 
+## Compilación
+
+&nbsp;
+Este proyecto usa el submódulo de git [LaTeX Commons](https://github.com/mrmalvicino/latex-commons).
+Al clonar y compilar, asegurarse de incluirlo:
+```bash
+git clone --recurse-submodules https://github.com/mrmalvicino/physics-book.git
+```
+
 ## Licencia y contribuciones
 
 &nbsp;

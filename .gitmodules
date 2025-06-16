@@ -1,0 +1,3 @@
+[submodule "utils/latex-commons"]
+	path = utils/latex-commons
+	url = https://github.com/mrmalvicino/latex-commons
